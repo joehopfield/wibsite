@@ -30,6 +30,9 @@ Here is the specs in markdown, but these were last edited at the end of November
 ### Bubbles that always come up in initial load
 - Contact (always comes up in first batch)
 
+### Storyboard
+- See [Storyboard](/Storyboard.md/) page.   
+
 ### The graph
 - Writing SPROJ
     - Bard
