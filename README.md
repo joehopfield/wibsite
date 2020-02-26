@@ -1,5 +1,38 @@
 # Maddie's Wib Site
 
+Maddie mentioned that she liked an artist friend's personal website https://madden.land/
+I looked at it a bit. Interestingly, it essentially uses instagram as its CMS.
+The javascript in the page queries madden's instagram for posts that she has liked:
+
+		instagramRequest.src =
+			"https://api.instagram.com/v1/users/" +
+			uid +
+			"/media/recent?access_token=" +
+			token +
+			(count ? "&count=" + count : "") +
+			(maxId ? "&max_id=" + maxId : "") +
+			"&callback=instagram";
+		document.head.appendChild(instagramRequest);
+
+		window.instagram = response => {
+			if (response.meta.code === 200) {
+				const newInstagrams = response.data
+					.filter(media => media["user_has_liked"])
+					.map(media => ({
+						media: media,
+						style: {
+							top: undefined,
+							left: undefined,
+							opacity: undefined,
+							rotation: undefined,
+							transform: undefined
+						}
+					}));
+If I used this trick for maddie's site, how do I know the relationships she wants?
+Could I use hash-tags? What's name of each post? #wibname_dance ... (note that non-leaf nodes are just text in her picture at least).
+Maybe should create another instagram for this?
+
+
 ---------- Forwarded message ---------
 From: Jacob Scarf Merrell <jacobscarfmerrell@gmail.com>
 Date: Thu, Jan 9, 2020 at 8:08 PM
