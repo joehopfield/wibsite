@@ -2,6 +2,7 @@
 
 Maddie mentioned that she liked an artist friend's personal website https://madden.land/
 I looked at it a bit. Interestingly, it essentially uses instagram as its CMS.
+Static content is hosted on (I think) porkbun.com.
 The javascript in the page queries madden's instagram for posts that she has liked:
 
 		instagramRequest.src =
