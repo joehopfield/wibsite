@@ -1,6 +1,8 @@
 # Maddie's Wib Site
 
 # Build notes (here temporarily)
+do npm install
+careful about npm updates unless you know what you're doing (api changes)
 remember to source prismic.env
 consider doing npm clean-install if there are problems.
 look into automating build
